@@ -1,11 +1,9 @@
 import React from 'react';
-import Example from 'Components/Example/Example';
+import Main from 'Components/Main';
 
 const Homepage = () => {
     return (
-        <>
-            <Example />
-        </>
+            <Main />
     );
 };
 

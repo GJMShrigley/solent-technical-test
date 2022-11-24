@@ -1,14 +1,12 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { ProfileElement, 
     ProfileContainer, 
     ProfileImage, 
     ProfileName, 
-    ProfileArrow} from './Styles'
+    ProfileArrow} from './Styles';
 
 export default function Profile(props) {
     const [profileData, setProfileData] = useState(props.profileData);
-    console.log(props.profileData.isDisplay)
 
     function toggleModal() {
         setProfileData(prevState => {

@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { HeaderContainer, 
   HeaderTitle, 
   HeaderText, 
   HeaderInputContainer,
   HeaderInput, 
-  HeaderIcon } from './Styles'
+  HeaderIcon } from './Styles';
 
 const Header = (props) => {
 

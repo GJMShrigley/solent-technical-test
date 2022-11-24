@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import HeaderImage from './../../../public/images/background.jpg';
+import HeaderImage from 'Public/images/background.jpg';
 import SearchIcon from 'Public/icons/seach.svg';
 import EmailIcon from 'Public/icons/email.svg';
 import DobIcon from 'Public/icons/dob.svg';
@@ -7,8 +7,6 @@ import PhoneIcon from 'Public/icons/phone.svg';
 import ArrowIcon from 'Public/icons/circle-arrow.svg';
 
 export const PageContainer = styled.div`
-    margin: 0;
-    padding: 0;
     height: 100vh;
 `
 
@@ -207,11 +205,9 @@ export const ModalElement = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    margin: 0;    
     width: 100vw;
     height: 124vh;
     min-height: 850px;
-    padding: 0;
     background: #ececec;
 
     @media only screen and (min-width : 700px) {
@@ -313,7 +309,6 @@ export const ModalText = styled.h1`
 export const ModalEmail = styled(EmailIcon)`
     position: relative;
     top: 1.6rem;
-    margin: 0;
     width: 1.5rem;
     height: 1.5rem;
 
@@ -328,7 +323,6 @@ export const ModalEmail = styled(EmailIcon)`
 export const ModalPhone = styled(PhoneIcon)`
     position: relative;
     top: 1.6rem;
-    margin: 0;
     width: 1.5rem;
     height: 1.5rem;
 
@@ -343,7 +337,6 @@ export const ModalPhone = styled(PhoneIcon)`
 export const ModalDob = styled(DobIcon)`
     position: relative;
     top: 1.6rem;
-    margin: 0;
     width: 1.5rem;
     height: 1.5rem;
 

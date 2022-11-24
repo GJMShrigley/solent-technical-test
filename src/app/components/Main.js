@@ -30,9 +30,9 @@ export default function App() {
     for (let i = 0; i < profilesCopy.length; i++) {
       if (profilesCopy[i].login.username === username) {
           profilesCopy[i].isOpen = !profilesCopy[i].isOpen;
-          const profileCopy = profilesCopy[i];
+          const profileData = profilesCopy[i];
           setProfiles(profilesCopy);
-          setModal(profileCopy);
+          setModal(profileData);
       }
     }
   }
@@ -47,10 +47,8 @@ export default function App() {
       fullName = profilesCopy[i].name.first + " " + profilesCopy[i].name.last;
       result = searchTerm.test(fullName);
       if (result) {
-        console.log(inputText, fullName, result);
         profilesCopy[i].isDisplay = true;
       } else {
-        console.log("fail")
         profilesCopy[i].isDisplay = false;
       }
       setProfiles(profilesCopy);

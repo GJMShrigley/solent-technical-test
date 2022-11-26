@@ -175,16 +175,16 @@ export const ProfileName = styled.h1`
     position: relative;
     left: .3rem;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3.5vw;
+    font-size: .7rem;
     font-weight: 700;
     color: #6d6d6d;
 
     @media only screen and (min-width : 500px) {
-        font-size: 2.5vw;
+        font-size: .9rem;
     }
 
     @media only screen and (min-width : 700px) {
-        font-size: 1.5vw;
+        font-size: 1rem;
     }
 `
 

@@ -9,12 +9,6 @@ export default function Profile(props) {
     const [profileData, setProfileData] = useState(props.profileData);
 
     function toggleModal() {
-        setProfileData(prevState => {
-            return {
-                ...prevState,
-                isOpen: !prevState.isOpen
-            };
-        });
         props.openModal(profileData.login.username);
     }
 

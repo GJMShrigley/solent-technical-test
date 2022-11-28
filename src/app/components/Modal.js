@@ -19,15 +19,11 @@ const Modal = (props) => {
         setProfileData(props.profileData);
     }, [props]);
 
-    function toggleModal() {
-        props.openModal(profileData.login.username); 
-    }
-
     return (
         !profileData.isOpen  ?
                 null
             :
-                <ModalElement className="modal" onClick={()=>toggleModal()}>
+                <ModalElement className="modal" onClick={()=>props.openModal(profileData.login.username)}>
                     <ModalContainer className="modal__container">
                         <ModalImageWrapper className="modal__image-wrapper">
                             <ModalImage className="modal__image" src={`${profileData.picture.thumbnail}`}></ModalImage>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ProfileElement, 
     ProfileContainer, 
     ProfileImage, 
@@ -6,19 +6,15 @@ import { ProfileElement,
     ProfileArrow} from './Styles';
 
 export default function Profile(props) {
-    const [profileData, setProfileData] = useState(props.profileData);
+    const profileData = props.profileData;
 
-    function toggleModal() {
-        props.openModal(profileData.login.username);
-    }
-
-    if (!props.profileData.isDisplay) {
+    if (!profileData.isDisplay) {
         return (
             null
         )
     } else {
     return (
-                <ProfileElement onClick={()=>toggleModal()}>
+                <ProfileElement onClick={()=>props.openModal(profileData.login.username)}>
                     <ProfileContainer>
                         <ProfileImage className="profile__image" src={`${profileData.picture.thumbnail}`}></ProfileImage>
                         <ProfileName className="profile__name">{`${profileData.name.first} ${profileData.name.last}`}</ProfileName>
